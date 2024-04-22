@@ -1,4 +1,90 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="copy.css">
+<title>My Snippets</title>
+
+</head>
+<body>
+      
+<div class="row">
+    <div class="col">
+        <div class="container">
+            <textarea class="textarea" id="textArea1">{
+                "Print to console": {
+                    "prefix": "kotacpp",
+                    "body": [
+                        "#include<bits/stdc++.h>",
+                        "using namespace std;",
+                        "#define int long long",
+                        "#define py cout << \"YES\" << endl",
+                        "#define pn cout << \"NO\" << endl",
+                        "#define FastIO() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
+                        "\nint32_t main(){\n\tFastIO();",
+                        "\t",
+                        "\t$1",
+                        "\t",
+                        "return 0;",
+                        "}"
+                    ],
+                    "description": "Log output to console"
+                }
+            }</textarea>
+            <button type="button" class="btn btn-success btn-lg" onclick="copyText('textArea1')">Copy Cpp Snippet</button>
+        </div>
+    </div>
+    <div class="col">
+        <div class="container">
+            <textarea class="textarea" id="textArea2">{
+                "Print to console": {
+                    "prefix": "kotac",
+                    "body": [
+                        "#include<stdio.h>",
+                        "int main(){",
+                        "\t",
+                        "\t$1",
+                        "\t",
+                        "return 0;",
+                        "}"
+                    ],
+                    "description": "Log output to console"
+                }
+            }</textarea>
+            <button type="button" class="btn btn-success btn-lg" onclick="copyText('textArea2')">Copy C Snippet</button>
+        </div>
+    </div>
+    <div class="col">
+        <div class="container">
+            <textarea class="textarea" id="textArea3">{
+                "Print to console": {
+                    "prefix": "kotajava",
+                    "body": [
+                        "class $1 {",
+                        "\tpublic static void main(String args[]){",
+                        "\t\t$2",
+                        "\t}",
+                        "}"
+                    ],
+                    "description": "Log output to console"
+                }
+            }</textarea>
+            <button type="button" class="btn btn-success btn-lg" onclick="copyText('textArea3')">Copy Java Snippet</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="copy.js"></script>
+</body>
+</html>
+
+<!-- OLD STRAT -->
+
+<!-- <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -48,5 +134,8 @@
 	<!-- H̵a̵c̵k̷e̸d̶ ̴b̴Y̵ ̷I̵m̶r̸a̶n̷ ̸S̸i̵h̶a̵b̵ -->
 	
 	
-</body>
+<!-- </body>
 </html>
+ --> -->
+
+ <!-- OLD END-->

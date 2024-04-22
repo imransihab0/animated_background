@@ -13,6 +13,125 @@ html{
 body{
 	width: 100%;
 	height: 100vh;
+	color: #000000;
+	background: -webkit-linear-gradient(-45deg, #EE7752, #E72C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+
+.h1_tag{
+	font-size: 2rem;
+    font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: 3px solid black;
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem 2rem;
+}
+
+@keyframes change{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.row {
+    display: flex; /* Use flexbox to arrange columns */
+    justify-content: space-between; /* Distribute columns evenly */
+}
+
+.col {
+    flex: 1; /* Make columns equally sized */
+    margin-right: 15px; /* Add some space between columns */
+}
+
+.container {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* background: -webkit-linear-gradient(45deg, #e2d810, #d9138a, #12a4d9, #322e2f); */
+    /* background: -webkit-linear-gradient(45deg, #cf1578, #e8d21d , #039fbe, #b20238); */
+    /* background: -webkit-linear-gradient(45deg, #e75874, #e75874 , #fbcbc9, #322514); */
+    /* background: -webkit-linear-gradient(45deg, #d902ee, #ffd79d , #f162ff, #320d3e); */
+    /* background: -webkit-linear-gradient(45deg, #ffcce7, #daf2dc , #81b7d2, #4d5198); */
+    background: -webkit-linear-gradient(45deg, #d71b3b, #e8d71e , #16acea, #4203c9);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar */
+.textarea::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.textarea::-webkit-scrollbar-track {
+    /* background: #500472; */
+    background: #e6e6e6;
+}
+
+/* Handle */
+.textarea::-webkit-scrollbar-thumb {
+    background: #79cbb8;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+/* Handle on hover */
+.textarea::-webkit-scrollbar-thumb:hover {
+    background: #86ffe3;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lato";
+}
+
+/* OLD START */
+
+/* @import "https://fonts.googleapis.com/css?family=Lato:100";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	font-family: "Lato", Arial, sans-serif;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
 	color: #black;
 	background: -webkit-linear-gradient(-45deg, #EE7752, #E72C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
@@ -43,3 +162,6 @@ h1{
 		background-position: 0 50%;
 	}
 }
+ */
+
+/* OLD END */

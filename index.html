@@ -14,27 +14,101 @@
     <div class="row">
         <div class="col-md-4">
             <div class="container">
-                <textarea class="textarea" id="textArea1">{
-                    "Print to console": {
-                        "prefix": "kotacpp",
-                        "body": [
-                            "#include<bits/stdc++.h>",
-                            "using namespace std;",
-                            "#define int long long",
-                            "#define py cout << \"YES\" << endl",
-                            "#define pn cout << \"NO\" << endl",
-                            "#define el cout << endl",
-                            "#define FastIO() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
-                            "\nint32_t main(){\n\tFastIO();",
-                            "\t",
-                            "\t$1",
-                            "\t",
-                            "return 0;",
-                            "}"
-                        ],
-                        "description": "Log output to console"
-                    }
-                }</textarea>
+                <textarea class="textarea" id="textArea1">
+                {
+	"Print to console": {
+		"prefix": "kotacpp",
+		"body": [
+			"// ",
+			"// @handle: imransihab0\n",
+			"#include<bits/stdc++.h>",
+			"using namespace std;",
+			"#define int long long",
+			"#define py cout << \"YES\" << endl",
+			"#define pn cout << \"NO\" << endl",
+			"#define fl(a, b) for (int i = a; i < b; i++)",
+			"#define fll(a) for (auto &i : a)",
+			"#define ssort(a) sort(a.begin(), a.end())",
+			"#define el cout << endl",
+			"#define FastIO() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
+			"\nint32_t main(){\n\tFastIO();",
+			"\t",
+			"\t$1",
+			"\t",
+			"return 0;",
+			"}"
+		],
+		"description": "Log output to console"
+	},
+
+	"Print to console with test case": {
+				"prefix": "codeforcecpp",
+				"body": [
+					"// ",
+					"// @handle: imransihab0\n",
+					"#include<bits/stdc++.h>",
+					"using namespace std;",
+					"#define int long long",
+					"#define pb push_back",
+					"#define py cout << \"YES\" << endl",
+					"#define pn cout << \"NO\" << endl",
+					"#define fl(a, b) for (int i = a; i < b; i++)",
+					"#define fll(a) for (auto &i : a)",
+					"#define ssort(a) sort(a.begin(), a.end())",
+					"#define el cout << endl",
+					"#define FastIO() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
+					"\nvoid solve()",
+					"{",
+					"\t$1",
+					"}",
+					"\nint32_t main(){\n\tFastIO();",
+					"\t",
+					"\tint t; cin >> t;",
+					"\twhile(t--) solve();",
+					"\t",
+					"return 0;",
+					"}"
+				],
+				"description": "Log output to console"
+	},
+
+	"Print to console with test case and more short codes": {
+				"prefix": "codekota",
+				"body": [
+					"// ",
+					"// @handle: imransihab0\n",
+					"#include<bits/stdc++.h>",
+					"using namespace std;",
+					"#define int long long",
+					"#define pb push_back",
+					"#define py cout << \"YES\" << endl",
+					"#define pn cout << \"NO\" << endl",
+					"#define el cout << endl",
+					"#define flp(a,b,c) for(int i=a; i<b; i+=c)",
+					"#define F first",
+					"#define S second",
+					"#define pb push_back",
+					"#define pbxy push_back({x,s})",
+					"#define hugeSort(x) sort(x.begin(), x.end())",
+					"#define arrSort(x, n) sort(x, x+n)",
+					"#define vpp(a, b) vector<pair<a, b>>",
+					"#define FastIO() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);",
+					"\nvoid solve()",
+					"{",
+					"\t$1",
+					"}",
+					"\nint32_t main(){\n\tFastIO();",
+					"\t",
+					"\tint t; cin >> t;",
+					"\twhile(t--) solve();",
+					"\t",
+					"return 0;",
+					"}"
+				],
+				"description": "Log output to console"
+	}
+}    
+                </textarea>
                 <button type="button" class="btn btn-success btn-lg mt-3" onclick="copyText('textArea1')">Copy Cpp Snippet</button>
             </div>
         </div>
